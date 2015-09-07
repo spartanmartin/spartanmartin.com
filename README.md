@@ -1,1 +1,0 @@
-# spartanmartin.com
