@@ -1,0 +1,113 @@
+/***************************************************
+**  GENERAL STYLES  
+***************************************************/
+html { font-family: 'Open Sans', sans-serif; font-size: 12pt; color: #333333; box-sizing: border-box; }
+*, *:before, *:after { margin: 0; padding: 0; box-sizing: inherit; }
+h1, h2, h3, h4, h5, h6, .heading { font-family: Montserrat, sans-serif; font-weight: bold; text-transform: uppercase; text-align: center; color: #557630; }
+ul { list-style: none; margin: auto; }
+a { color: #559830; text-decoration: none; }
+a:hover { color: #88b225; text-decoration: underline; }
+section { padding: 3em; }
+section:nth-child(2n+1) { background-color: rgba(0,0,0,.15); }
+
+
+/***************************************************
+**  THEME COLORS
+***************************************************/
+
+/*  GREEN  */
+.spartan-text { color: #aad450 !important; }
+.spartan-text-dark { color: #556530; }
+.spartan-text-shadow { -webkit-text-shadow: 4px 4px 3px rgba(100,125,50,.5); -moz-text-shadow: 4px 4px 3px rgba(100,125,50,.5); text-shadow: 4px 4px 3px rgba(100,125,50,.5); }
+.spartan-box { background-color: #aad450 !important; }
+
+/***************************************************
+**  FORMS
+***************************************************/
+input, textarea, select { font-family: Monteserrat, sans-serif; font-size: 16pt !important; padding: 1.25em .75em !important; }
+
+
+/***************************************************
+**  HEADER
+***************************************************/
+.jumbotron { font-size: larger; margin-bottom: 0; -webkit-box-shadow: 4px 3px 3px rgba(0,0,0,.2); -moz-box-shadow: 4px 3px 3px rgba(0,0,0,.2); box-shadow: 4px 3px 3px rgba(0,0,0,.2); }
+.jumbotron h1 { font-size: 84pt; text-align: center; line-height: 2.5; }
+.jumbotron-header { background-color: rgba(0,0,0,.15); background-size: cover; background-position: center center; }
+.jumbotron-black-belt { background-image: url('/images/blackbelt-green.jpg'); }
+.jumbotron-services { background-image: url('/images/services.jpg'); }
+.jumbotron-resume { background-image: url('/images/resume.jpg'); }
+.jumbotron-projects { background-image: url('/images/projects.jpg'); }
+.jumbotron-contact { background-image: url('/images/contact.jpg'); }
+.jumbotron-health { background-image: url('/images/health.jpg'); }
+.jumbotron-meals { background-image: url('/images/meals.jpg'); }
+.jumbotron-exercise { background-image: url('/images/exercise.jpg'); }
+.jumbotron-sleep { background-image: url('/images/sleep.jpg'); }
+
+
+/***************************************************
+**  MAIN NAVIGATION 
+***************************************************/
+.nav-main { position: relative; font-family: Monteserrat, sans-serif; font-weight: bold; text-transform: uppercase; border: none; }
+.nav-main ul { width: 100%; font-size: 0pt; background-color: inherit; }
+.nav-main li { float: left; box-sizing: border-box; width: 33.3333333%; font-size: 12pt; background-color: inherit; }
+.nav-main a { display: block; box-sizing: border-box; font-size: larger; line-height: 3; text-align: center; text-decoration: none; background-color: #aad450; border-top: 10px solid transparent; border-bottom: 10px solid transparent; }
+.nav-main a:hover { transition: all 1s ease; color: white; background-color: #667630; border-top-color: #333333; border-bottom-color: #333333; }
+.nav-main .pull i { padding-right: .5em; }
+
+.nav-fixed { position: fixed; top: 0; left: 0; right: 0; width: 100%; -webkit-border-radius: none; -moz-border-radius: none; border-radius: none; z-index: 1000; }
+.nav-fixed a { line-height: 3; }
+
+
+/***************************************************
+**  SECONDARY NAVIGATION
+***************************************************/
+
+
+/***************************************************
+**  RESPONSIVE DESIGN (MOBILE FIRST)
+***************************************************/
+/*  APPLE WATCH  */
+@media (max-device-width: 42mm) and (min-device-width: 38mm) { 
+
+}
+
+/* MOTO 360 WATCH */
+@media (max-device-width: 218px) and (max-device-height: 281px) {
+
+}
+
+/*  HANDHELD PHONES (XS) */
+@media only screen and (min-width: 300px) {
+	.jumbotron h1 { font-size: 22pt; }
+
+	.nav-main li { width: 100%; }
+	.nav-main .pull { display: block; padding: 0 1em; text-align: left; }
+	.nav-main .pull i { float: right; line-height: 2; }
+	.nav-main div.container { display: none; padding-left: 0; padding-right: 0; }
+	.nav-main a { line-height: 2; }
+}
+
+@media only screen and (min-width: 321px) {
+	.jumbotron h1 { font-size: 26pt; }
+}
+
+/*  TABLETS  (SM) */
+@media only screen and (min-width: 768px) {
+	.jumbotron h1 { font-size: 60pt; }
+
+	.nav-main li { width: calc(100% / 3); }
+	.nav-main .pull { display: none; }
+	.nav-main div.container { display: block; }
+	.nav-main a { line-height: 3; }
+}
+
+/*  LAPTOPS  (MD) */
+@media only screen and (min-width: 992px) {
+	.jumbotron h1 { font-size: 75pt; }
+}
+
+/*  DESKTOPS  (LG)  */
+@media only screen and (min-width: 1200px) {
+
+}
+

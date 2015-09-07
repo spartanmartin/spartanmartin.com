@@ -1,0 +1,90 @@
+/***************************************************
+**  GENERAL STYLES  
+***************************************************/
+.resume-section:nth-child(2n+1) { background-color: rgba(0,0,0,.15); }
+.resume-label h2 { text-transform: lowercase; text-align: right; line-height: 1; padding: 0; margin: 0; }
+.resume-content { font-family: 'Open Sans', sans-serif; font-size: 12pt; }
+
+
+/***************************************************
+**  WORK HISTORY
+***************************************************/
+.work-group div { line-height: 2; }
+.work-employer { text-align: left; font-weight: bold; }
+.work-dates { text-align: left; }
+.work-position { text-align: right; font-style: italic; }
+
+
+/***************************************************
+**  PROFESSIONAL SKILLS
+***************************************************/
+#professional-skills .resume-label { margin-top: 1em; }
+.skills-group { padding: 1em; margin: 1em 0; background-color: rgba(48,128,32,.1);  }
+.skills-name { text-align: left; }
+.skills-years { text-align: right; font-weight: bold; }
+.skills-stars { text-align: right; font-size: 12pt; }
+
+
+/***************************************************
+**  PROFESSIONAL SKILLS
+***************************************************/
+.education-school { text-align: left; line-height: 2; }
+.education-degree { text-align: right; line-height: 2; }
+
+
+/***************************************************
+**  RESPONSIVE DESIGN (MOBILE FIRST)
+***************************************************/
+/*  APPLE WATCH  */
+@media (max-device-width: 42mm) and (min-device-width: 38mm) { 
+
+}
+
+/* MOTO 360 WATCH */
+@media (max-device-width: 218px) and (max-device-height: 281px) {
+
+}
+
+/*  HANDHELD PHONES (XS) */
+@media only screen and (min-width: 300px) {
+	.resume-label { padding-bottom: 1em; margin-bottom: 2em; border-bottom: 2px solid #556530; }
+	.resume-label h2 { text-align: center; }
+
+	.work-group, .education-group { padding: 1em 0; }
+	.work-group div, .education-group div { text-align: center; line-height: 1.2; }
+
+	.skills-group { padding: 0; margin: 0; background-color: transparent; }
+	.skills-group .row { padding: 1em; margin: 1em 0; background-color: rgba(48,128,32,.1); }
+	.skills-group div { text-align: center; }
+}
+
+/*  SMALL DEVICES (MD) */
+@media only screen and (min-width: 361px) {
+}
+
+/*  TABLETS  (SM) */
+@media only screen and (min-width: 768px) {
+	.resume-label { border: none; }
+	.resume-label h2 { text-align: right; }
+
+	.work-group, .education-group { padding: 0; border: none; }
+	.work-group div, .education-group div { text-align: right; line-height: 2; }
+	.work-group div:first-child, .education-group div:first-child { text-align: left; }
+
+	.skills-group { padding: 1em; margin: 1em 0; background-color: rgba(48,128,32,.1);  }
+	.skills-group .row { padding: 0; margin: 0; background-color: transparent; }
+	.skills-group div { text-align: right; }
+	.skills-group div:first-child { text-align: left; }
+
+}
+
+/*  LAPTOPS  (MD) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/*  DESKTOPS  (LG)  */
+@media only screen and (min-width: 1200px) {
+
+}
+

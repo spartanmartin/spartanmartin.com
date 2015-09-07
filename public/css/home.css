@@ -1,0 +1,36 @@
+/***************************************************
+**  GENERAL STYLES  
+***************************************************/
+
+
+/***************************************************
+**  PROFILE PIC  
+***************************************************/
+.profile { position: relative; width: 260px; height: 330px; margin: 0 auto; overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.profile div { width: 100%; line-height: 2; text-align: center; text-transform: uppercase; font-family: Montserrat, sans-serif; color: white; }
+.profile-pic { height: 260px; transition: all 1s ease; background-image: url('/images/profile.png'); background-position: 0 0; }
+.profile-pic .profile-hover { transition: opacity 1s ease; opacity: 100; color: black; line-height: 2; background-color: rgba(255,255,255,.5); }
+.profile-info { transition: bottom 1s ease; position: absolute; bottom: -105px; }
+.profile-info a { display: block; text-decoration: none; color: white; }
+.profile-info a:hover { text-decoration: none; color: #333; }
+.profile-info div { line-height: 2.6; height: 35px; }
+.profile-name { height: 70px !important; padding: 1em 0; background-color: rgba(0,0,0,.6); }
+.profile-name p { margin: 0; padding: 0; line-height: 1; font-size: 14pt;  }
+.profile-name span { font-style: italic; text-transform: capitalize; }
+.profile-email { background-color: #777; }
+.profile-linkedin { background-color: #0E76A8; }
+.profile-treehouse { background-color: #556530; }
+
+.profile:hover .profile-pic { transition: all 1.5s ease; background-position: 0 -30px; }
+.profile:hover .profile-hover { transition: opacity 2s ease; opacity: 0; }
+.profile:hover .profile-info { transition: bottom .75s ease; bottom: 0; }
+
+
+/***************************************************
+**  DEFINITIONS  
+***************************************************/
+.definition { font-size: 16pt; }
+.definition:first-child { padding-bottom: 2.2em; }
+.definition b { font-weight: 700; color: #778730; }
+.definition ol { list-style-position: inside; }
+.definition-term { font-size: 24pt; }
